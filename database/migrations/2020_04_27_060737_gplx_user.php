@@ -24,7 +24,7 @@ class GplxUser extends Migration
             $table->string('hokhau');
             $table->string('noio');
             $table->string('sodienthoai');
-            $table->rememberToken();
+            //$table->rememberToken();
             $table->timestamps();
         });
     }
