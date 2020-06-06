@@ -103,9 +103,8 @@
                                 <div class="item active">
 
                             
-                            <img class="slide-image" src="{{asset('/img/main01.jpg')}}" alt="">
+                            <img class="slide-image" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang1)}}" alt="">
                         </div>
-
                         <div class="item">
                             <img class="slide-image" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang2)}}" alt="">
                         </div>
