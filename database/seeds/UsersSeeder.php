@@ -21,15 +21,15 @@ class UsersSeeder extends Seeder
 
         	],
         	[
-        		'email'=>'Boss@gmail.com',
+        		'email'=>'http@gmail.com',
         		'password'=>bcrypt('123456'),
-        		'level'=>0,
+        		'level'=>1,
 
 
         	],
 
 
         ];
-        // DB::table('gplx_user')->insert($data);
+         DB::table('gplx_user')->insert($data);
     }
 }

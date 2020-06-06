@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html>
 <head>
-<base href="{{asset('http://localhost/laravel/laravel/resources/views/backend1/')}}/">
+<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/cbsh/')}}/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Trang chủ cán bộ sát hạch</title>
 <link href="css/bootstrap.min.css" rel="stylesheet">
 <link href="css/datepicker3.css" rel="stylesheet">
-<link href="css/styles.css" rel="stylesheet">
+<link href="css/csscbsh.css" rel="stylesheet">
 <script type="text/javascript" src="ckeditor/ckeditor.js"></script>
 <script src="js/lumino.glyphs.js"></script>
 </head>
