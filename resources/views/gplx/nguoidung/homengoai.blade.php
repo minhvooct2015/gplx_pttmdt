@@ -62,8 +62,8 @@
 			    <ul class="nav navbar-nav pull-right">
                    
                    
-                    <li><a href="{{asset('dangky')}}"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li>
-      <li><a href="{{asset('dangnhap')}}"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li>
+                    <li><a href="{{asset('dangky')}}"><!-- <span class="glyphicon glyphicon-user"> --></span> Đăng ký</a></li>
+      <li><a href="{{asset('dangnhap')}}"><!-- <span class="glyphicon glyphicon-log-in"> --></span> Đăng nhập</a></li>
                 </ul>
             </div>
 
@@ -111,10 +111,10 @@
                                   @endforeach
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
+                        <!-- <span class="glyphicon glyphicon-chevron-left"></span> -->
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
                     </a>
                 </div>
             </div>

@@ -20,7 +20,8 @@ class MotaHANGXEcontroller extends Controller
          $blx= DB::table('motahangxe')
         ->select('id_hx')
         ->get();
-        
+        // dd($blx);
+        if(!empty($blx)){
         foreach ($blx as $user) {
                 $data[]= $user->id_hx;
             }
@@ -28,7 +29,9 @@ class MotaHANGXEcontroller extends Controller
         $data['list1']=DB::table('cbsh_hangxe')                 
           ->where('hx_id', '>', 1)
         ->whereNotIn('hx_id', $data)->get();
-
+}
+else  $data['list1']=DB::table('cbsh_hangxe')                 
+          ->where('hx_id', '>', 1)->get();
 
 
 
