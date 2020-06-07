@@ -194,7 +194,7 @@
 			                        <p>
 			                        	{!!$cate->mthx_chitiet!!}
 			                        </p>
-			                        <a class="btn btn-success" href="{{asset('gplx/nguoidung/thempdk/'.$cate->hx_id)}}">Đăng ký học<span class="glyphicon glyphicon-chevron-right"></span></a>
+			                        <a class="btn btn-success" href="{{asset('gplx/nguoidung/thempdk/'.$cate->hx_id)}}">Đăng ký học<!-- <span class="glyphicon glyphicon-chevron-right"></span> --></a>
 								</div>
 
 		                	</div>
