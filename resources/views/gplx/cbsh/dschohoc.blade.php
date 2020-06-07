@@ -44,7 +44,7 @@
 							<table class="table table-bordered">
 				              	<thead>
 					                <tr class="bg-primary">
-					                	<th>Số thứ tự</th>
+					                	
 					                  <th>Tên Chỗ học</th>
 					                   <th>Địa chỉ</th>
 					                  <th style="width:30%">Tùy chọn</th>
@@ -54,12 +54,12 @@
 				              		@foreach($chlist as $hx)
 								<tr>
 
-								<td>{{$hx->ch_id}}</td>
+								
                                 <td>{{$hx->ch_ten}}</td>
                                 <td>{{$hx->ch_diachi}}</td>
 									<td>
-			                    		<a href="{{asset('/gplx/cbsh/suach/'.$hx->ch_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-			                    		<a href="{{asset('/gplx/cbsh/xoach/'.$hx->ch_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+			                    		<a href="{{asset('/gplx/cbsh/suach/'.$hx->ch_id)}}" class="btn btn-warning"> Sửa</a>
+			                    		<a href="{{asset('/gplx/cbsh/xoach/'.$hx->ch_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger">Xóa</a>
 			                  		</td>
 			                  	</tr>
 			                  	  @endforeach

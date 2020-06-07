@@ -42,8 +42,8 @@
                                 </td>
                                 <td>{!!$hx->mthx_chitiet!!}</td>
                                 <td>
-                                        <a href="{{asset('/gplx/cbsh/suamthangxe/'.$hx->mthx_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-                                        <a href="{{asset('/gplx/cbsh/xoamthangxe/'.$hx->mthx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/cbsh/suamthangxe/'.$hx->mthx_id)}}" class="btn btn-warning"> Sửa</a>
+                                        <a href="{{asset('/gplx/cbsh/xoamthangxe/'.$hx->mthx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 
                                     
