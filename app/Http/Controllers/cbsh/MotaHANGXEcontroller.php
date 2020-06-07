@@ -21,7 +21,7 @@ class MotaHANGXEcontroller extends Controller
         ->select('id_hx')
         ->get();
         // dd($blx);
-        if(!empty($blx)){
+        if(empty($blx)){
         foreach ($blx as $user) {
                 $data[]= $user->id_hx;
             }
