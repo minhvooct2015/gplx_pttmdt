@@ -1,0 +1,17 @@
+Script started on Mon Jun  8 20:23:51 2020
+
+The default interactive shell is now zsh.
+To update your account to use zsh, please run `chsh -s /bin/zsh`.
+For more details, please visit https://support.apple.com/kb/HT208050.
+[?1034hbash-3.2$ git push origin master[C[C[C[C[C[C[C[C[C[C[K
+bash-3.2$ git push origin master[C[C[C[C[C[C[C[C[C[C[C[C[C[Ccommit -m "cap nhat"[C[C[C[C[C[C[C[C[C[C[C[C[C[Cadd .[K[K[K[K[K[K[K[K[K[Kscripts
+bash: scripts: command not found
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ 
+bash-3.2$ c[Kcd /
+bash-3.2$ 

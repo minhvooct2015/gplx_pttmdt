@@ -151,6 +151,7 @@ Route::group(['prefix'=>'gplx'],function(){// đường dẫn
 		// Route::get('sualichhoc/{id}','lichhocController@sualh');
 		// Route::post('sualichhoc/{id}','lichhocController@postsualh');
 		// Route::get('xoalh/{id}','lichhocController@xoalh');
+		Route::get('thongkeana','ThongkeAnalyticsController@index');
 		
 
 });
