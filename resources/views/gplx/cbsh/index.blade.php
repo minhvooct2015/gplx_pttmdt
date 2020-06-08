@@ -119,21 +119,7 @@
             </li>
 
             </li>
-             <li class="dropdown pull-left">
-                 <li class="dropdown pull-left">
-                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"></use></svg> Thống kê <span class="caret"></span></a>
-                        <ul class="dropdown-menu" role="menu">
-                            <li >
-                                
-                <a href="{{asset('gplx/cbsh/dspdk')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê </a>
-                            </li>
-
-                        </ul>
-                        
-            </li>
-
-            </li>
-			<li class="dropdown pull-left">
+                  <li class="dropdown pull-left">
                  <li class="dropdown pull-left">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"></use></svg> Bảo trì <span class="caret"></span>
                  @include('sweetalert::alert')</a>
@@ -147,6 +133,20 @@
 
                         </ul>
                 </li>
+            </li>
+             <li class="dropdown pull-left">
+                 <li class="dropdown pull-left">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"></use></svg> Thống kê <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li >
+                                
+                <a href="{{asset('gplx/cbsh/thongke')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê </a>
+                            </li>
+
+                        </ul>
+                        
+            </li>
+
             </li>
 
 

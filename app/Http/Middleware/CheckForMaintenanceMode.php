@@ -28,7 +28,7 @@ class CheckForMaintenanceMode extends Middleware
     public function handle($request, Closure $next)
     {
         if ($this->app->isDownForMaintenance() && (!$this->isAdminRequest($request) || !$this->isAdminIpAdress($request))) {
-            return response('<h1> Website đang tạm thời bảo trì </h1>', 503);
+            return response('<h1 style="color:red;"> <center>Website đang tạm thời bảo trì </center></h1>', 503);
         }
         return $next($request);
     }
@@ -39,7 +39,7 @@ class CheckForMaintenanceMode extends Middleware
     // loại các route không cần bảo trì để admin quản lý
     private function isAdminRequest($request)
     {
-        return ($request->is('gplx*')
+        return ($request->is('gplx/cbsh*')
     	or $request->is('site/live')
     	or $request->is('dangnhap')
     );
