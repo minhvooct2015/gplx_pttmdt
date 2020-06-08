@@ -59,10 +59,10 @@
                                        <!--  <a href="{{asset('/gplx/nguoidung/suablx/'.$hx->pdk_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a> -->
                                         
                                         @if($hx->pdk_tinhtrangHP==0)  
-                                        <a href="{{asset('/gplx/nguoidung/vnpay/'.$hx->pdk_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Đóng tiền học</a>
+                                        <a href="{{asset('/gplx/nguoidung/vnpay/'.$hx->pdk_id)}}" class="btn btn-warning"> Đóng tiền học</a>
                                         @endif
-                                        <a href="{{asset('/gplx/nguoidung/chitietpdk/'.$hx->pdk_id)}}" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Xem chi tiết</a>
-                                        <a href="{{asset('/gplx/nguoidung/xoapdk/'.$hx->pdk_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/nguoidung/chitietpdk/'.$hx->pdk_id)}}" class="btn btn-success">Xem chi tiết</a>
+                                        <a href="{{asset('/gplx/nguoidung/xoapdk/'.$hx->pdk_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 </tr>
                                   @endforeach

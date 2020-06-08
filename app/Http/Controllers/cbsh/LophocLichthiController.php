@@ -31,14 +31,16 @@ class LophocLichthiController extends Controller
         ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
         ->join('cbsh_chothi', 'cbsh_lichthi.lt_chothi', '=', 'cbsh_chothi.cth_id')
         ->whereNotIn('lt_id', $data)
-        ->get();
+        ->orderBy('cbsh_lichthi.lt_id', 'desc')
+                ->paginate(5);
     }
     else
     {
         $data['ngaythi']= DB::table('cbsh_lichthi')
         ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
         ->join('cbsh_chothi', 'cbsh_lichthi.lt_chothi', '=', 'cbsh_chothi.cth_id')
-        ->get();
+        ->orderBy('cbsh_lichthi.lt_id', 'desc')
+               ->paginate(5);
     }
 
 
@@ -47,7 +49,8 @@ class LophocLichthiController extends Controller
     	->join('cbsh_lophoclx', 'cbsh_lichthi_lophoc.id_lhlx', '=', 'cbsh_lophoclx.lhlx_id')
     	->join('cbsh_lichthi', 'cbsh_lichthi_lophoc.id_lt', '=', 'cbsh_lichthi.lt_id')
          ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
-    	->get();
+         ->orderBy('cbsh_lichthi.lt_id', 'desc')
+    	        ->paginate(5);
     	return view('gplx.cbsh.saplichthilophoc',$data);
     }
      public function thempostltlh(AddlophoclichthiRequest $re)

@@ -8,7 +8,7 @@ use App\Http\Requests\AddnguoidungRequest;
 use App\User;
 use Auth;
 use App\Models\gplx_banglaixe;
-
+use RealRashid\SweetAlert\Facades\Alert;
 
 class DangkyController extends Controller
 {
@@ -37,6 +37,7 @@ class DangkyController extends Controller
         $ch->blx_noicap=0;
         $ch->id_hv=$gv->id;
         $ch->save();
+        Alert::success('Bạn đã đăng ký thành công', 'Success Message'); 
     	return redirect('dangnhap'); 
     }
      public function getdn()

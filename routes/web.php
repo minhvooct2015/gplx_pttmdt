@@ -46,6 +46,7 @@ Route::group(['prefix'=>'gplx'],function(){// đường dẫn
 		Route::get('mail','MailController@mail');
 		Route::get('detailmail','MailController@ctmail');
 
+		Route::get('thongke','ThongkeController@thongke');
 
 		Route::get('banner','BannerController@getbanner');
 		Route::post('banner','BannerController@postbanner');

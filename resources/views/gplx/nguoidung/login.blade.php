@@ -39,6 +39,7 @@ body {
                 <div class="panel-heading">Đăng nhập</div>
                 <div class="panel-body">
                    @include('errors.note')
+                   @include('sweetalert::alert')
                     @if (session('status'))
                         <div class="alert alert-success">
                             {{ session('status') }}

@@ -184,7 +184,7 @@
                         <ul class="dropdown-menu" role="menu">
                             <li >
                                 
-                <a href="{{asset('gplx/cbsh/dspdk')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê </a>
+                <a href="{{asset('gplx/cbsh/thongke')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê </a>
                             </li>
 
                         </ul>

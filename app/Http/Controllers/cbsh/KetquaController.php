@@ -61,15 +61,37 @@ class KetquaController extends Controller
 
         // $data['list1'] = gplx_chohoc::all();
         // $data['list2'] = gplx_loailichhoc::all();
-         $data['list3']= DB::table('phieudangky')
+         $pdkr= DB::table('phieudangky')
         ->join('gplx_user', 'phieudangky.pdk_hv', '=', 'gplx_user.id')
         ->join('cbsh_hangxe', 'phieudangky.pdk_hx', '=', 'cbsh_hangxe.hx_id')
-        ->where('phieudangky.pdk_diemLT', '<', '18')
-        ->where('phieudangky.pdk_diemTH', '<', '18')
+        // ->where('phieudangky.pdk_diemLT', '<', '18')
+        // ->where('phieudangky.pdk_diemTH', '<', '18')
         ->where('phieudangky.pdk_diemLT', '>', '0')
         ->where('phieudangky.pdk_diemTH', '>', '0')
         ->orderBy('pdk_id','desc')
-        ->paginate(5);
+        ->get();
+        // ->paginate(5);
+foreach ($pdkr as $user) {
+    if($user->pdk_diemLT <18 || $user->pdk_diemTH<18)
+                $data[]= $user->pdk_id;
+            }
+            //dd($data1);
+    if(!empty($data))
+    {
+        $data['list3']=DB::table('phieudangky')
+        ->join('gplx_user', 'phieudangky.pdk_hv', '=', 'gplx_user.id')
+        ->join('cbsh_hangxe', 'phieudangky.pdk_hx', '=', 'cbsh_hangxe.hx_id')
+        ->whereIn('phieudangky.pdk_id', $data)
+        ->orderBy('pdk_id','desc')
+        
+         ->paginate(5);
+    }
+
+
+
+
+
+
          $data['list2']= DB::table('cbsh_hangxe')->where('hx_id', '>', 1)->get();;
         
         //dd($data['list2']);

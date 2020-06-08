@@ -85,7 +85,7 @@ $pdkmoi= DB::table('phieudangky')
        ->whereNotIn('hx_id', $data1)
         ->paginate(3);
     }
-    else 
+   elseif (!empty($data)) 
     {
         $data['list1']=DB::table('motahangxe')
         ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
@@ -95,6 +95,17 @@ $pdkmoi= DB::table('phieudangky')
         //  ->whereNotIn('hx_id', $data2)
          ->get();
     }
+    else 
+        {
+        $data['list1']=DB::table('motahangxe')
+        ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
+          ->where('hx_id', '>', 1)
+        //->whereNotIn('hx_id', $data)
+        // ->whereNotIn('hx_id', $data1)
+        //  ->whereNotIn('hx_id', $data2)
+         ->get();
+    }
+
 
 
         // $data['blx']= DB::table('gplx_banglaixe')

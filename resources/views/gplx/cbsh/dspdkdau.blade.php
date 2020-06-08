@@ -57,7 +57,7 @@
                                 <td>{{$hx->cmnd}}</td>
                                 <td>{{$hx->hx_ten}}</td>
                                 <td>
-                                        <a href="{{asset('/gplx/cbsh/ctpdkdau/'.$hx->pdk_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Chi tiết</a>
+                                        <a href="{{asset('/gplx/cbsh/ctpdkdau/'.$hx->pdk_id)}}" class="btn btn-warning"> Chi tiết</a>
                                         
                                     </td>
                                     

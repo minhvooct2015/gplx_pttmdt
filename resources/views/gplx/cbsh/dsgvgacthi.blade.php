@@ -41,8 +41,8 @@
                                 <td>{{$hx->cth_ten}}</td>
                                 
                                     <td>
-                                        <a href="{{asset('/gplx/cbsh/suabpc/'.$hx->gvlt_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-                                        <a href="{{asset('/gplx/cbsh/xoapc/'.$hx->gvlt_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/cbsh/suabpc/'.$hx->gvlt_id)}}" class="btn btn-warning">Sửa</a>
+                                        <a href="{{asset('/gplx/cbsh/xoapc/'.$hx->gvlt_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 </tr>
                                     

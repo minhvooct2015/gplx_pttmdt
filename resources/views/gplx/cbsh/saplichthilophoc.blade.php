@@ -100,6 +100,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
+					{{$list2->links() }}
 				</div>
 			</div>
 		</div><!--/.row-->

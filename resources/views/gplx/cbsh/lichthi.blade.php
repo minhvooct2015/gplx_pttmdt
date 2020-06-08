@@ -96,6 +96,7 @@
 						</div>
 						<div class="clearfix"></div>
 					</div>
+					{{$hxlist->links() }}
 				</div>
 			</div>
 		</div><!--/.row-->

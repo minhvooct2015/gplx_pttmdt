@@ -20,7 +20,8 @@ class lichthiController extends Controller
         $data['list1'] = gplx_loailichhoc::all();
     	$data['hxlist']= DB::table('cbsh_lichthi')->join('cbsh_chothi','cbsh_lichthi.lt_chothi','cbsh_chothi.cth_id')->orderBy('lt_id','desc')
          ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
-         ->get();
+          ->orderBy('cbsh_lichthi.lt_id', 'desc')
+        ->paginate(5);
      //     dd($data2['hxlist']);
     	return view('gplx.cbsh.lichthi',$data);
     }
@@ -58,7 +59,7 @@ class lichthiController extends Controller
             $ch->id_llt=$re->llt;
             $ch->lt_chothi=$re->dc;
             $ch->save();
-                    return back(); 
+            return back(); 
          }
         
     	

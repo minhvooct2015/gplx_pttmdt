@@ -69,7 +69,7 @@ class lichhocController extends Controller
     public function thempostdslichhoc(AddlichhocRequest $re)
     {
          $ltlh= gplx_lichhoc::where('lh_ngay', '=', $re->ngh)
-         ->where('id_llh', '=', $re->llh)
+         //->where('id_lhlx', '=', $re->lhlx)
          ->where('id_ch', '=', $re->ch)
 
          ->first();
