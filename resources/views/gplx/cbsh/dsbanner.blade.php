@@ -61,15 +61,15 @@
                                     <td>
                                         @if($hx->ban_trangthai==0)
                                         <p>
-                                        <a href="{{asset('/gplx/cbsh/Showbanner/'.$hx->ban_id)}}" class="btn btn-success"><span class="glyphicon glyphicon-edit"></span> Hiển thị</a>
+                                        <a href="{{asset('/gplx/cbsh/Showbanner/'.$hx->ban_id)}}" class="btn btn-success"> Hiển thị</a>
                                         </p>
                                         @else
                                         
                                             <b class="btn btn-success" style="background-color:#FF6347 ; color:#F0F8FF"> Đang được sử dụng</b>
                                         
                                         @endif
-                                        <a href="{{asset('/gplx/cbsh/suabanner/'.$hx->ban_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-                                        <a href="{{asset('/gplx/cbsh/xoabanner/'.$hx->ban_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/cbsh/suabanner/'.$hx->ban_id)}}" class="btn btn-warning"> Sửa</a>
+                                        <a href="{{asset('/gplx/cbsh/xoabanner/'.$hx->ban_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 </tr>
                                   @endforeach

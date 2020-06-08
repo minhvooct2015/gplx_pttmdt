@@ -102,9 +102,9 @@
 
                         </ul>
                         
+            	</li>
             </li>
 
-            </li>
 			<li class="dropdown pull-left">
                  <li class="dropdown pull-left">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"></use></svg> Gửi mail lịch dạy <span class="caret"></span></a>
@@ -133,7 +133,20 @@
             </li>
 
             </li>
+			<li class="dropdown pull-left">
+                 <li class="dropdown pull-left">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"></use></svg> Bảo trì <span class="caret"></span></a>
+                        <ul class="dropdown-menu" role="menu">
+                            <li >  
+                <a href="{{route('maintenance-down')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Bật bảo trì </a>
+                            </li>
+                            <li >  
+                <a href="{{route('maintenance-up')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Tắt bảo trì </a>
+                            </li>
 
+                        </ul>
+                </li>
+            </li>
 
 
 			

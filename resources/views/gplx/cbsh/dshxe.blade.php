@@ -55,8 +55,8 @@
                                 <td>{{$hx->hx_ten}}</td>
                                 <td>{{number_format($hx->hx_giatien,0,',','.')}} VND</td>
 									<td>
-			                    		<a href="{{asset('/gplx/cbsh/suahangxe/'.$hx->hx_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-			                    		<a href="{{asset('/gplx/cbsh/xoahangxe/'.$hx->hx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+			                    		<a href="{{asset('/gplx/cbsh/suahangxe/'.$hx->hx_id)}}" class="btn btn-warning"> Sửa</a>
+			                    		<a href="{{asset('/gplx/cbsh/xoahangxe/'.$hx->hx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
 			                  		</td>
 			                  	</tr>
 			                  	  @endforeach

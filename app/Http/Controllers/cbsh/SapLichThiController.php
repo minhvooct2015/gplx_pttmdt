@@ -21,11 +21,22 @@ class SapLichThiController extends Controller
         foreach ($lich as $user) {
                 $data[]= $user->id_lt;
             }
+ if(!empty($data) ){
+
+
     	$data['ngaythi']= DB::table('cbsh_lichthi')
         ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
         ->join('cbsh_chothi', 'cbsh_lichthi.lt_chothi', '=', 'cbsh_chothi.cth_id')
         ->whereNotIn('lt_id', $data)
         ->get();
+    }
+    else
+    {
+        $data['ngaythi']= DB::table('cbsh_lichthi')
+        ->join('cbsh_loailichhoc', 'cbsh_lichthi.id_llt', '=', 'cbsh_loailichhoc.llh_id')
+        ->join('cbsh_chothi', 'cbsh_lichthi.lt_chothi', '=', 'cbsh_chothi.cth_id')
+        ->get();
+    }
     	$data['gv']=gplx_giaovien::all();
     	return view('gplx.cbsh.sapLT',$data);
     }

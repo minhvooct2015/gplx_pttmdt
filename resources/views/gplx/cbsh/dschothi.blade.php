@@ -57,8 +57,8 @@
                                 <td>{{$hx->cth_ten}}</td>
                                 <td>{{$hx->cth_diachi}}</td>
 									<td>
-			                    		<a href="{{asset('/gplx/cbsh/suacth/'.$hx->cth_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-			                    		<a href="{{asset('/gplx/cbsh/xoacth/'.$hx->cth_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+			                    		<a href="{{asset('/gplx/cbsh/suacth/'.$hx->cth_id)}}" class="btn btn-warning"><!-- <span class="glyphicon glyphicon-edit"></span> --> Sửa</a>
+			                    		<a href="{{asset('/gplx/cbsh/xoacth/'.$hx->cth_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><!-- <span class="glyphicon glyphicon-trash"></span> --> Xóa</a>
 			                  		</td>
 			                  	</tr>
 			                  	  @endforeach

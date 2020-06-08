@@ -48,8 +48,8 @@
 								<tr>
                                 <td>{{$hx->llh_ten}}</td>
 									<td>
-			                    		<a href="{{asset('/gplx/cbsh/suallh/'.$hx->llh_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-			                    		<a href="{{asset('/gplx/cbsh/xoallh/'.$hx->llh_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+			                    		<a href="{{asset('/gplx/cbsh/suallh/'.$hx->llh_id)}}" class="btn btn-warning"><!-- <span class="glyphicon glyphicon-edit"></span> --> Sửa</a>
+			                    		<a href="{{asset('/gplx/cbsh/xoallh/'.$hx->llh_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><!-- <span class="glyphicon glyphicon-trash"></span>  -->Xóa</a>
 			                  		</td>
 			                  	</tr>
 			                  	  @endforeach

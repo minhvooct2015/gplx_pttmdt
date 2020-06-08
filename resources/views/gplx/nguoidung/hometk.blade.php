@@ -74,8 +74,8 @@
                     <!-- <li>
                     	<a href="{{asset('logout')}}">Đăng xuất</a>
                     </li> -->
-                    <li><a href="{{asset('dangky')}}"><span class="glyphicon glyphicon-user"></span> Đăng ký</a></li> -->
-      <li><a href="{{asset('dangnhap')}}"><span class="glyphicon glyphicon-log-in"></span> Đăng nhập</a></li> 
+                    <li><a href="{{asset('dangky')}}"><!-- <span class="glyphicon glyphicon-user"></span> --> Đăng ký</a></li> -->
+      <li><a href="{{asset('dangnhap')}}"><!-- <span class="glyphicon glyphicon-log-in"></span> --> Đăng nhập</a></li> 
                 </ul>
             </div>
 
@@ -112,10 +112,10 @@
                                   @endforeach
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
+                       <!--  <span class="glyphicon glyphicon-chevron-left"></span> -->
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
+                        <!-- <span class="glyphicon glyphicon-chevron-right"></span> -->
                     </a>
                 </div>
             </div>
@@ -185,26 +185,14 @@
                         <div class="row-item row">
                             
                              @foreach($list2 as $cate)
-                            <h3>
-                                 LỚP HỌC LÁI XE  {{$cate->lhlx_ten}}
-                            </h3>
+                            <h3 style="color:Navy;">
+                                 
+                                  {{$cate->lhlx_ten}}
+                                  <a class="btn btn-link" href="{{asset('gplx/nguoidung/thempdk/'.$cate->hx_id)}}">Đăng ký học</a>
                             <div class="col-md-8 border-right">
-                                <div class="col-md-5">
-                                    
-                                        <!-- <img class="img-responsive" src="image/320x150.png" alt=""> -->
-                                        <img    height="150px" width="150px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhHX/'.$cate->mthx_anh)}}" class="thumbnail">
-                                    
-                                </div>
+                            </h3>
 
-                                <div class="col-md-7">
-                               <br> <br> <br> <br>
-                                   
-                                    <a class="btn btn-success" href="{{asset('gplx/nguoidung/thempdk/'.$cate->hx_id)}}">Đăng ký học<span class="glyphicon glyphicon-chevron-right"></span></a>
-                                </div>
-
-                            </div>
                             
-                            <div class="break"></div>
                             @endforeach
                         </div>
                         <!-- end item -->

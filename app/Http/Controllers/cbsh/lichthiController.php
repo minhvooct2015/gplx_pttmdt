@@ -27,14 +27,41 @@ class lichthiController extends Controller
     
     public function thempostlt(AddLichthiRequest $re)
     {
-    	$ch = new gplx_lichthi;
-    	$ch->lt_ngaythi=$re->ngt;
-    	$ch->lt_slug=str_slug($re->ngt);
-        $ch->lt_giothi=$re->gt;
-        $ch->id_llt=$re->llt;
-        $ch->lt_chothi=$re->dc;
-    	$ch->save();
-    	return back(); 
+         $ltlh= DB::table('cbsh_lichhoc')
+         //->join('cbsh_lichthi','cbsh_lichthi.lt_ngaythi','cbsh_lichhoc.lh_ngay')
+         ->where('cbsh_lichhoc.lh_ngay',$re->ngt)
+          ->select('lh_ngay')
+         ->first();
+        //  if($ltlh)
+        // {
+        //     return redirect('gplx/cbsh/themlichhoc')->with('success' ,'Lịch học đã bị trùng'); 
+        // }
+        // else
+        // {
+         // foreach ($ltlh as $user) {
+         //        $data[]= $user->lh_ngay;
+         //    }
+          //$lt=DB::table('cbsh_lichthi')->where($re->ngt,$data)->select('lt_ngaythi')->get();
+    // dd($ltlh);
+         if(!empty($ltlh))
+         {
+            return redirect('gplx/cbsh/dslichthi')->with('success' ,'Lịch thi trùng với lịch học'); 
+            
+
+         }
+         else
+         {
+            $ch = new gplx_lichthi;
+            $ch->lt_ngaythi=$re->ngt;
+            $ch->lt_slug=str_slug($re->ngt);
+            $ch->lt_giothi=$re->gt;
+            $ch->id_llt=$re->llt;
+            $ch->lt_chothi=$re->dc;
+            $ch->save();
+                    return back(); 
+         }
+        
+    	
     }
     public function suadslth($id)
     {

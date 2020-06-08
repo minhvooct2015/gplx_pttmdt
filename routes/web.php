@@ -246,3 +246,12 @@ Route::group(['prefix'=>'gplx'],function(){// đường dẫn
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
+// baotri//
+Route::get('site/shutdown',[
+    'as' => 'maintenance-down',
+    'uses'=>'HomeController@maintenance_down'
+]);
+Route::get('site/live',[
+    'as' => 'maintenance-up',
+    'uses'=>'HomeController@maintenance_up'
+]);

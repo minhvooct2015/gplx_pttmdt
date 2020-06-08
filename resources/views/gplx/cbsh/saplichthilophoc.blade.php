@@ -88,8 +88,8 @@
                    
                                 
                                     <td>
-                                        <a href="{{asset('/gplx/cbsh/sualichthilophoc/'.$hx->ltlh_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-                                        <a href="{{asset('/gplx/cbsh/xoaltlh/'.$hx->ltlh_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/cbsh/sualichthilophoc/'.$hx->ltlh_id)}}" class="btn btn-warning"> Sửa</a>
+                                        <a href="{{asset('/gplx/cbsh/xoaltlh/'.$hx->ltlh_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 </tr>
                                   @endforeach

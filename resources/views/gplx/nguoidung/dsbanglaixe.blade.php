@@ -49,8 +49,8 @@
                                 <td>{{$hx->blx_ngaycap}}</td>
                                 <td>{{$hx->blx_noicap}}</td>
                                     <td>
-                                        <a href="{{asset('/gplx/nguoidung/suablx/'.$hx->blx_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-                                        <a href="{{asset('/gplx/nguoidung/xoablx/'.$hx->blx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+                                        <a href="{{asset('/gplx/nguoidung/suablx/'.$hx->blx_id)}}" class="btn btn-warning">Sửa</a>
+                                        <a href="{{asset('/gplx/nguoidung/xoablx/'.$hx->blx_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"> Xóa</a>
                                     </td>
                                 </tr>
                                   @endforeach

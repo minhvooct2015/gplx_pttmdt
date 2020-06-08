@@ -66,7 +66,7 @@
                    
                     <li>
                     	<a href="{{asset('gplx/nguoidung/ttcanhan')}}">
-                    		<span class ="glyphicon glyphicon-user"> Tài khoản </span>
+                    		 Tài khoản </span>
                     		{{Auth::user()->email}}
                             <!-- {{Auth::user()->id}} -->
                     	</a>
@@ -114,10 +114,10 @@
                                   @endforeach
                     </div>
                     <a class="left carousel-control" href="#carousel-example-generic" data-slide="prev">
-                        <span class="glyphicon glyphicon-chevron-left"></span>
+                       <!--  <span class="glyphicon glyphicon-chevron-left"></span> -->
                     </a>
                     <a class="right carousel-control" href="#carousel-example-generic" data-slide="next">
-                        <span class="glyphicon glyphicon-chevron-right"></span>
+                       <!--  <span class="glyphicon glyphicon-chevron-right"></span> -->
                     </a>
                 </div>
             </div>

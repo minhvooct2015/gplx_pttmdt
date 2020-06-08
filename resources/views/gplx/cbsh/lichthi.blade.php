@@ -17,6 +17,13 @@
 						</div>
 						<div class="panel-body">
 							 @include('errors.note')
+							 @if ($message = Session::get('success'))
+                                <div class="alert alert-danger">
+                                    
+                                    <p>{!! $message !!}</p>
+                                </div>
+                                <?php Session::forget('success');?>
+                                @endif
 							 <form role="form" method="post" enctype="multipart/form-data">
 							 	 {{csrf_field()}}
 							<div class="form-group">
@@ -77,8 +84,8 @@
                                 	<td>{{$hx->cth_ten}}</td>
                                 	<td>{{$hx->llh_ten}}</td>
 									<td>
-			                    		<a href="{{asset('/gplx/cbsh/sualth/'.$hx->lt_id)}}" class="btn btn-warning"><span class="glyphicon glyphicon-edit"></span> Sửa</a>
-			                    		<a href="{{asset('/gplx/cbsh/xoalth/'.$hx->lt_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger"><span class="glyphicon glyphicon-trash"></span> Xóa</a>
+			                    		<a href="{{asset('/gplx/cbsh/sualth/'.$hx->lt_id)}}" class="btn btn-warning"> Sửa</a>
+			                    		<a href="{{asset('/gplx/cbsh/xoalth/'.$hx->lt_id)}}" onclick="return confirm('Bạn có chắc chắn muốn xóa?')" class="btn btn-danger">Xóa</a>
 			                  		</td>
 			                  	</tr>
 			                  	  @endforeach
