@@ -125,10 +125,9 @@
         <p></p>
 	<!-- Centered Pills -->
 <ul class="nav nav-pills nav-justified">
-  <li class=" pil "><a href="{{asset('/')}}">Home</a></li>
+   <li class=" pil "><a href="{{asset('/gioithieu')}}">Giới thiệu</a></li>
   <li class="pil"><a href="{{asset('/')}}">Khóa thi sát hạch bằng lái xe</a></li>
-  <li class="pil" ><a href="#">Tài liệu ôn thi</a></li>
-  <li class="pil" ><a href="#">Liên hệ</a></li>
+  <li class="pil" ><a href="{{asset('/lienhe')}}">Liên hệ</a></li>
 </ul>
 <p></p>
 <!-- thêm banner vào nhé -->

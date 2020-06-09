@@ -3,7 +3,7 @@
 <html lang="en">
 
 <head>
-	<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/nguoidung/')}}/">
+    <base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/nguoidung/')}}/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -59,7 +59,7 @@
                 </ul>
 
                 
-			    <ul class="nav navbar-nav pull-right">
+                <ul class="nav navbar-nav pull-right">
                    
                    
                     <li><a href="{{asset('dangky')}}"><!-- <span class="glyphicon glyphicon-user"> --></span> Đăng ký</a></li>
@@ -77,9 +77,9 @@
 
     <!-- Page Content -->
     <div class="container">
-	<!-- <img src="image/home/main.jpg" alt="" height="500px" width="1200px"> -->
-    	<!-- slider -->
-    	<div class="row carousel-holder">
+    <!-- <img src="image/home/main.jpg" alt="" height="500px" width="1200px"> -->
+        <!-- slider -->
+        <div class="row carousel-holder">
             <div class="col-md-12">
                 <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                     <ol class="carousel-indicators">
@@ -122,9 +122,9 @@
         <!-- end slide -->
 
         <p></p>
-	<!-- Centered Pills -->
+    <!-- Centered Pills -->
 <ul class="nav nav-pills nav-justified">
-<li class=" pil "><a href="{{asset('/gioithieu')}}">Giới thiệu</a></li>
+ <li class=" pil "><a href="{{asset('/gioithieu')}}">Giới thiệu</a></li>
   <li class="pil"><a href="{{asset('/')}}">Khóa thi sát hạch bằng lái xe</a></li>
   <li class="pil" ><a href="{{asset('/lienhe')}}">Liên hệ</a></li>
 </ul>
@@ -134,81 +134,70 @@
             <div class="col-md-3 ">
      @foreach($list as $hx)
                <div id="banner-l" class="text-center">
-               			<div class="banner-l-item">
-							<a href="#">
+                        <div class="banner-l-item">
+                            <a href="#">
                                <!--  <img src="image/home/ban5.gif" alt="" class="img-thumbnail"> -->
                                 <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai1)}}" alt="" class="img-thumbnail">
                             </a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#">
+                        </div>
+                        <div class="banner-l-item">
+                            <a href="#">
                                 <!-- <img src="image/home/ban1.jpg" alt="" class="img-thumbnail"> -->
                                 <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai2)}}" alt="" class="img-thumbnail">
 
                             </a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#">
+                        </div>
+                        <div class="banner-l-item">
+                            <a href="#">
                                 <!-- <img src="image/home/ban2.jpg" alt="" class="img-thumbnail"> -->
                                 <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai3)}}" alt="" class="img-thumbnail">
                             </a>
-						</div>
-						<div class="banner-l-item">
-							<a href="#">
+                        </div>
+                        <div class="banner-l-item">
+                            <a href="#">
                                 <!-- <img src="image/home/ban4.gif" alt="" class="img-thumbnail"> -->
                                 <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai4)}}" alt="" class="img-thumbnail">
                             </a>
-						</div>
-						</div>
+                        </div>
+                        </div>
                 <!-- <p>sadsfhjjds</p> -->
 @endforeach
             </div>
  
-            	
+                
 
 
          <div class="col-md-9">
-	            <div class="panel panel-warning vien">            
-	            	<div class="panel-heading" style="background-color:Tomato; color:white;" >
-	            		<h2 style="margin-top:0px; margin-bottom:0px;">KHÓA HỌC</h2>
-	            	</div>
+                <div class="panel panel-warning vien">            
+                    <div class="panel-heading" style="background-color:Tomato; color:white;" >
+                        <h2 style="margin-top:0px; margin-bottom:0px;">
+                            Liên hệ
+                        </h2>
+                    </div>
 
-	            	<div class="panel-body"style="background-color:Cornsilk;" >
-	            		<!-- item -->
-					    <div class="row-item row">
-					    	@foreach($list1 as $cate)
-		                	<h3>
-		                		 LỚP HỌC LÁI XE HẠNG {{$cate->hx_ten}}</a> 
-		                	</h3>
-		                	<div class="col-md-8 border-right">
-		                		<div class="col-md-5">
-			                        
-			                            <!-- <img class="img-responsive" src="image/320x150.png" alt=""> -->
-			                            <img  	height="150px" width="150px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhHX/'.$cate->mthx_anh)}}" class="thumbnail">
-			                        
-			                    </div>
+                    <div class="panel-body"style="background-color:Cornsilk;" >
+                        <!-- item -->
+                        <div class="row-item row">
+                            <h6>
+                                
+                            </h6>
+                            <div class="col-md-9">
+                                
+                        <p>Bãi xe Á Châu, Số 35 Đường Thới An 17A, TP Cần Thơ<br /> <strong>Tell:</strong> <b><a href="tel:0914857068">0914.857.068</a> – <a href="tel:0979071007">097.907.1007</a></b><br />
+<strong>Hotline:</strong> <span style="color: #ff0000;"><strong>19001733</strong></span><br /> <strong>Fax:</strong> 028-37179488<br /> <strong>MST:</strong> 0310031872<br /> <strong>Email:</strong> info@vanchuyenachau.com.vn</p></div></div></div></div></div>
 
-			                    <div class="col-md-7">
-			                   
-			                        <p>
-			                        	{!!$cate->mthx_chitiet!!}
-			                        </p>
-			                        <a class="btn btn-success" href="{{asset('gplx/nguoidung/thempdk/'.$cate->hx_id)}}">Đăng ký học<!-- <span class="glyphicon glyphicon-chevron-right"></span> --></a>
-								</div>
-
-		                	</div>
-		                    
-							<div class="break"></div>
-							@endforeach
-		                </div>
-		                <!-- end item -->
-		               
-		               
-		                
-						{{ $list1->links() }}
-					</div>
-	            </div>
-        	</div>
+                            </div>
+                            
+                            
+                        </div>
+                        <!-- end item -->
+                       
+                       
+                        
+                      
+                    </div>
+                </div>
+            </div>
         </div>
         <!-- /.row -->
     </div>
@@ -217,51 +206,51 @@
     <!-- Footer -->
     <hr>
     <!-- footer -->
-	<footer id="footer">			
-		<div id="footer-t">
-			<div class="container">
-				<div class="row">				
-					<div id="about" class="col-md-4 col-sm-12 col-xs-12">
-						<h3 style="color:grey">SỞ LAO ĐỘNG THƯƠNG BINH VÀ XÃ HỘI TPCT</h3> 
+    <footer id="footer">            
+        <div id="footer-t">
+            <div class="container">
+                <div class="row">               
+                    <div id="about" class="col-md-4 col-sm-12 col-xs-12">
+                        <h3 style="color:grey">SỞ LAO ĐỘNG THƯƠNG BINH VÀ XÃ HỘI TPCT</h3> 
                         <h5 >TRUNG TÂM ĐÀO TẠO VÀ SÁT HẠCH LÁI XE THÀNH CÔNG</h5>
-						<p class="text-justify">
+                        <p class="text-justify">
 
 
 
 Tel: (028) 6660.7770
 
 Hotline: 0936.36.75.36 (Call, SMS, Zalo)  –  0974.449.456.</p>
-					</div>
-					<div id="hotline" class="col-md-4 col-sm-12 col-xs-12">
-						<h3>Hotline</h3>
-						<p>Phone Sale: (+84) 0988 550 553</p>
-						<p>Email: sirtuanhoang@gmail.com</p>
-					</div>
-					<div id="contact" class="col-md-4 col-sm-12 col-xs-12">
-						<h3>Contact Us</h3>
-						<p>Address 1: B8A Võ Văn Dũng - Hoàng Cầu Đống Đa - Hà Nội</p>
-						<p>Address 2: Số 25 Ngõ 178/71 - Tây Sơn Đống Đa - Hà Nội</p>
-					</div>
-				</div>				
-			</div>
-			<div id="footer-b">				
-				<div class="container">
-					<div class="row">
-						<div id="footer-b-l" class="col-md-6 col-sm-12 col-xs-12 text-center">
-							
-						</div>
-						<div id="footer-b-r" class="col-md-6 col-sm-12 col-xs-12 text-center">
-							
-						</div>
-					</div>
-				</div>
-				<div id="scroll">
-					<a href="#"><img src="image/home/scroll.png"></a>
-				</div>	
-			</div>
-		</div>
-	</footer>
-	<!-- endfooter -->
+                    </div>
+                    <div id="hotline" class="col-md-4 col-sm-12 col-xs-12">
+                        <h3>Hotline</h3>
+                        <p>Phone Sale: (+84) 0988 550 553</p>
+                        <p>Email: sirtuanhoang@gmail.com</p>
+                    </div>
+                    <div id="contact" class="col-md-4 col-sm-12 col-xs-12">
+                        <h3>Contact Us</h3>
+                        <p>Address 1: B8A Võ Văn Dũng - Hoàng Cầu Đống Đa - Hà Nội</p>
+                        <p>Address 2: Số 25 Ngõ 178/71 - Tây Sơn Đống Đa - Hà Nội</p>
+                    </div>
+                </div>              
+            </div>
+            <div id="footer-b">             
+                <div class="container">
+                    <div class="row">
+                        <div id="footer-b-l" class="col-md-6 col-sm-12 col-xs-12 text-center">
+                            
+                        </div>
+                        <div id="footer-b-r" class="col-md-6 col-sm-12 col-xs-12 text-center">
+                            
+                        </div>
+                    </div>
+                </div>
+                <div id="scroll">
+                    <a href="#"><img src="image/home/scroll.png"></a>
+                </div>  
+            </div>
+        </div>
+    </footer>
+    <!-- endfooter -->
     <!-- end Footer -->
     <!-- jQuery -->
     <script src="js/jquery.js"></script>

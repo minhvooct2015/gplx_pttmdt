@@ -23,7 +23,14 @@ class NguoidungngoaiController extends Controller
         //dd($data['list']);
     	return view('gplx.nguoidung.homengoai',$data);
     }
-    public function gioithieu()
+    public function lienhe()
+    {   
+       
+        $data['list']=DB::table('banner')->where('ban_trangthai','=',1 )->get();
+        //dd($data['list']);
+        return view('gplx.nguoidung.lienhe',$data);
+    }
+     public function gioithieu()
     {   
        
         $data['list']=DB::table('banner')->where('ban_trangthai','=',1 )->get();
