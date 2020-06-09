@@ -124,7 +124,7 @@
         <p></p>
 	<!-- Centered Pills -->
 <ul class="nav nav-pills nav-justified">
-  <li class=" pil "><a href="#">Home</a></li>
+  <li class=" pil "><a href="{{asset('/gioithieu')}}">Home</a></li>
   <li class="pil"><a href="{{asset('/')}}">Khóa thi sát hạch bằng lái xe</a></li>
   <li class="pil" ><a href="#">Tài liệu ôn thi</a></li>
   <li class="pil" ><a href="#">Liên hệ</a></li>

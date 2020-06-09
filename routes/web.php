@@ -230,6 +230,7 @@ Route::group(['prefix'=>'gplx'],function(){// đường dẫn
 		// đăng nhập
 			Route::get('/','NguoidungngoaiController@gethome') ;
 			//Route::post('/','DangkyController@postdn') ;
+			Route::get('gioithieu','NguoidungngoaiController@gioithieu') ;
 			Route::get('timkiem','NguoidungngoaiController@hometk');
 			
 });
