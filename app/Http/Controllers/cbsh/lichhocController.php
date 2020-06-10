@@ -61,18 +61,18 @@ class lichhocController extends Controller
     }
     public function thempostdslichhoc(AddlichhocRequest $re)
     {
-        //  $ltlh= gplx_lichhoc::where('lh_ngay', '=', $re->ngh)
-        //  //->where('id_lhlx', '=', $re->lhlx)
-        //  ->where('id_ch', '=', $re->ch)
+         $ltlh= gplx_lichhoc::where('lh_ngay', '=', $re->ngh)
+         //->where('id_lhlx', '=', $re->lhlx)
+         ->where('id_ch', '=', $re->ch)
 
-        //  ->first();
-        // // dd($ltlh);
-        //  if($ltlh)
-        // {
-        //     return redirect('gplx/cbsh/themlichhoc')->with('success' ,'Lịch học đã bị trùng'); 
-        // }
-        // else
-        // {
+         ->first();
+        // dd($ltlh);
+         if($ltlh)
+        {
+            return redirect('gplx/cbsh/themlichhoc')->with('success' ,'Lịch học đã bị trùng'); 
+        }
+        else
+        {
     	$gv = new gplx_lichhoc;
         $gv->id_llh=$re->llh;
         $gv->id_ch=$re->ch; 
@@ -82,7 +82,7 @@ class lichhocController extends Controller
     	$gv->save();
     	return redirect('gplx/cbsh/dslichhoc'); 
     }
-    // }
+    }
     public function sualh($id)
     {
          $data['lt']= gplx_lichhoc::find($id);
