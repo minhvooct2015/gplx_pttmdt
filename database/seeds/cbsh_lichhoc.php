@@ -20,7 +20,7 @@ class cbsh_lichhoc extends Seeder
         		'id_ch'=>'6',
         		'id_lhlx'=>'10',
         		
-
+        	],
 
         	];
         	 DB::table('cbsh_lichhoc')->insert($data);
