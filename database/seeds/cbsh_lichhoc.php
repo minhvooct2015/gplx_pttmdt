@@ -22,7 +22,7 @@ class cbsh_lichhoc extends Seeder
         		
 
 
-        	],
+        	];
         	 DB::table('cbsh_lichhoc')->insert($data);
     }
 }
