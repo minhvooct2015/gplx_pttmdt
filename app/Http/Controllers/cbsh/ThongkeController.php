@@ -43,7 +43,7 @@ class ThongkeController extends Controller
          $data['tk']= DB::table('gplx_user')->count();
           // $tongtien= DB::table('phieudangky')          
           // ->get();
-    	 //dd($tongtien);
+    	//dd($tongtien);
 
     	return view('gplx.cbsh.thongke',$data);
     }
