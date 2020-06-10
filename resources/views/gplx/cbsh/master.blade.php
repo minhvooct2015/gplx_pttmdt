@@ -187,11 +187,11 @@
                                 
                 <a href="{{asset('gplx/cbsh/thongke')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê </a>
                             </li>
-                            <li >
+                            <!-- <li >
                                 
                 <a href="{{asset('gplx/cbsh/thongkeana')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Thống kê google  </a>
                 
-                            </li>
+                            </li> -->
 
                         </ul>
                         

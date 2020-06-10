@@ -40,13 +40,22 @@
                             <table class="table table-bordered">
                                 <thead>
                                     <tr class="bg-primary">
-                                      <th style="width:50%">Số lượng học viên đăng ký học lái xe</th>
+                                        <th>Tài khoản</th>
+                                        <th>Giáo viên</th>
+                                        <th>Lớp học</th>
+
+                                      <th >Số lượng học viên đăng ký học lái xe</th>
                                       <th >Tổng số tiền</th>
                                       
                                     </tr>
                                 </thead>
                                 <tbody id="lth">
-                                 <td>{{$list3}}</td>
+                                     <td> {{$tk}}</td>
+                                
+                               
+                                 <td>{{$listgv}}</td>
+                                    <td>{{$listlh}} </td>
+                                     <td>{{$list3}}</td>
 
                                  <td>
                                 {{number_format($tongtien,0,',','.')}} VND
@@ -90,17 +99,18 @@ var chart = new CanvasJS.Chart("chartContainer", {
     theme: "light1", // "light2", "dark1", "dark2"
     animationEnabled: false, // change to true      
     title:{
-        text: "Thống kê"
+        text: "Biểu đồ thống kê"
     },
     data: [
     {
         // Change type to "bar", "area", "spline", "pie",etc.
         type: "column",
         dataPoints: [
-            { label: "Tài khoản",  y: 20  },
-            { label: "Giáo viên", y: 15  },
-            { label: "Lớp học", y: 10  },
-            { label: "Số lượng học viên",  y: 30  },
+            { label: "Tài khoản",  y: {{$tk}}  },
+            { label: "Giáo viên", y: {{$listgv}}  },
+            { label: "Lớp học", y: {{$listlh}}  },
+            { label: "Số lượng học viên",  y: {{$lisu}}  },
+            // { label: "Tổng số tiền:",  y: {{$tongtien}}  },
             // { label: "Số lượng",  y: 28  }
         ]
     }

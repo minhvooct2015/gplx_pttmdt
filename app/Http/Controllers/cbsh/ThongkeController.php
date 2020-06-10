@@ -37,7 +37,10 @@ class ThongkeController extends Controller
     	  	$data['tongtien']=$data['tongtien']+$tong;
     	  
     	  }
-
+         $data['lisu']= DB::table('gplx_user')->where('level', 0)->count();
+        $data['listlh']= DB::table('cbsh_lophoclx')->count();
+        $data['listgv']= DB::table('cbsh_giaovien')->count();
+         $data['tk']= DB::table('gplx_user')->count();
           // $tongtien= DB::table('phieudangky')          
           // ->get();
     	 //dd($tongtien);
