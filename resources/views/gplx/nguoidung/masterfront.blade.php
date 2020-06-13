@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-	<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/nguoidung/')}}/">
+	<base href="{{asset('../resources/views/gplx/nguoidung/')}}/">
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -106,10 +106,10 @@
                                 <div class="item active">
 
                             
-                            <img class="slide-image" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang1)}}" alt="">
+                            <img class="slide-image" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang1)}}" alt="">
                         </div>
                         <div class="item">
-                            <img class="slide-image" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang2)}}" alt="">
+                            <img class="slide-image" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang2)}}" alt="">
                         </div>
                                   @endforeach
                     </div>
@@ -142,26 +142,26 @@
                         <div class="banner-l-item">
                             <a href="#">
                                <!--  <img src="image/home/ban5.gif" alt="" class="img-thumbnail"> -->
-                                <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai1)}}" alt="" class="img-thumbnail">
+                                <img src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai1)}}" alt="" class="img-thumbnail">
                             </a>
                         </div>
                         <div class="banner-l-item">
                             <a href="#">
                                 <!-- <img src="image/home/ban1.jpg" alt="" class="img-thumbnail"> -->
-                                <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai2)}}" alt="" class="img-thumbnail">
+                                <img src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai2)}}" alt="" class="img-thumbnail">
 
                             </a>
                         </div>
                         <div class="banner-l-item">
                             <a href="#">
                                 <!-- <img src="image/home/ban2.jpg" alt="" class="img-thumbnail"> -->
-                                <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai3)}}" alt="" class="img-thumbnail">
+                                <img src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai3)}}" alt="" class="img-thumbnail">
                             </a>
                         </div>
                         <div class="banner-l-item">
                             <a href="#">
                                 <!-- <img src="image/home/ban4.gif" alt="" class="img-thumbnail"> -->
-                                <img src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai4)}}" alt="" class="img-thumbnail">
+                                <img src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai4)}}" alt="" class="img-thumbnail">
                             </a>
                         </div>
                         </div>

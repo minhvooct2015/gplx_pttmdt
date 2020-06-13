@@ -51,30 +51,38 @@ class ttNguoidungcontroller extends Controller
                 $data2[]= $user->pdk_hx;
             }
 
-            if(!empty($data2) && !empty($data1)){
+            if((!empty($data2) && !empty($data1)) && !empty($data)){
         $data['list1']=DB::table('motahangxe')
     	->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
           ->where('hx_id', '>', 1)
         ->whereNotIn('hx_id', $data)
         ->whereNotIn('hx_id', $data1)
         ->whereNotIn('hx_id', $data2)
-        ->paginate(3);
+        ->paginate(4);
     }
-    elseif (!empty($data2)) {
+    elseif (!empty($data2) && !empty($data1)) {
+        $data['list1']=DB::table('motahangxe')
+        ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
+          ->where('hx_id', '>', 1)
+        ->whereNotIn('hx_id', $data1)
+        ->whereNotIn('hx_id', $data2)
+        ->paginate(4);
+    }
+    elseif (!empty($data2) && !empty($data)) {
         $data['list1']=DB::table('motahangxe')
         ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
           ->where('hx_id', '>', 1)
         ->whereNotIn('hx_id', $data)
         ->whereNotIn('hx_id', $data2)
-        ->paginate(3);
+        ->paginate(4);
     }
-    elseif (!empty($data1)) {
+    elseif (!empty($data1) && !empty($data)) {
         $data['list1']=DB::table('motahangxe')
         ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')               
           ->where('hx_id', '>', 1)
         ->whereNotIn('hx_id', $data)
        ->whereNotIn('hx_id', $data1)
-        ->paginate(3);
+        ->paginate(4);
     }
    elseif (!empty($data)) 
     {
@@ -84,7 +92,7 @@ class ttNguoidungcontroller extends Controller
         ->whereNotIn('hx_id', $data)
         // ->whereNotIn('hx_id', $data1)
         // ->whereNotIn('hx_id', $data2)
-        ->paginate(3);
+        ->paginate(4);
     }
     else
     {
@@ -98,7 +106,7 @@ class ttNguoidungcontroller extends Controller
         ->paginate(3);
     }
         $data['ban']=DB::table('banner')->where('ban_trangthai','=',1 )->get();
-         //dd($data1);
+        // dd( $data['list1']);
     	// $data['list1'] = DB::table('motahangxe')
     	// ->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')->paginate(3);
     	return view('gplx.nguoidung.home',$data);

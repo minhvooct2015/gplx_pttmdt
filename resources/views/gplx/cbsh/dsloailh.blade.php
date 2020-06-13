@@ -13,7 +13,7 @@
 			<div class="col-xs-12 col-md-5 col-lg-5">
 					<div class="panel panel-primary">
 						<div class="panel-heading">
-							Thêm chỗ học
+							Thêm loại lịch học
 						</div>
 						<div class="panel-body">
 							 @include('errors.note')

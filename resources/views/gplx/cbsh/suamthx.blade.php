@@ -32,7 +32,7 @@
                                     <div class="form-group" >
                                         <label>Ảnh minh họa</label>
                                         <input  id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
-                                       <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhHX/'.$lt->mthx_anh)}}" class="thumbnail">
+                                       <img width="100px" src="{{asset('../storage/app/anhHX/'.$lt->mthx_anh)}}" class="thumbnail">
                                     </div>
                                     <div class="form-group" >
                                         <label>Nội dung mô tả</label>

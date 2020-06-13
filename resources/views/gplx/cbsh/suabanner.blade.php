@@ -22,34 +22,34 @@
 									<div class="form-group" >
 										<label>Banner ngang 1:</label>
 										<input  id="img" type="file" name="b1" class="form-control " onchange="changeImg(this)">
-										 <img id="avatar" width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang1)}}" class="thumbnail">
+										 <img id="avatar" width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang1)}}" class="thumbnail">
 									</div>
 									<div class="form-group" >
 										<label>Banner ngang 2:</label>
 										<input  id="img" type="file" name="b2" class="form-control " onchange="changeImg(this)">
 					                   <!--  <img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png"> -->
-					                    <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang2)}}" class="thumbnail">
+					                    <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang2)}}" class="thumbnail">
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 1:</label>
 										<input  id="img" type="file" name="b3" class="form-control " onchange="changeImg(this)">
-										<img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai1)}}" class="thumbnail">
+										<img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai1)}}" class="thumbnail">
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 2:</label>
 										<input  id="img" type="file" name="b4" class="form-control " onchange="changeImg(this)">
-										<img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai2)}}" class="thumbnail">
+										<img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai2)}}" class="thumbnail">
 									</div>
 									
 									<div class="form-group" >
 										<label>Banner trái 3:</label>
 										<input  id="img" type="file" name="b5" class="form-control " onchange="changeImg(this)">
-										<img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai3)}}" class="thumbnail">
+										<img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai3)}}" class="thumbnail">
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 4:</label>
 										<input  id="img" type="file" name="b6" class="form-control " onchange="changeImg(this)">
-										<img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai4)}}" class="thumbnail">
+										<img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai4)}}" class="thumbnail">
 									</div>
 									
 									

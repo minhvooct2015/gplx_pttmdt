@@ -38,7 +38,7 @@
                                 <tr>
                                 <td>{{$hx->hx_ten}}</td>
                                 <td>
-                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhHX/'.$hx->mthx_anh)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('../storage/app/anhHX/'.$hx->mthx_anh)}}" class="thumbnail">
                                 </td>
                                 <td>{!!$hx->mthx_chitiet!!}</td>
                                 <td>

@@ -20,7 +20,7 @@
 								<div class="col-xs-8">
 									<div class="form-group" >
 										<label>Hạng xe</label>
-										<select name="hx" id="lth" class="form-control">
+										<select required name="hx" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn hạng xe</option>
 											@foreach($list1 as $nt)
 											<option value="{{$nt->hx_id}}">{{$nt->hx_ten}}</option>
@@ -29,12 +29,12 @@
 									</div>
 									<div class="form-group" >
 										<label>Ảnh minh họa</label>
-										<input  id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
+										<input required id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
 					                   <!--  <img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png"> -->
 									</div>
 									<div class="form-group" >
 										<label>Nội dung mô tả</label>
-										<textarea class=" form-control ckeditor"   name="mota" ></textarea >
+										<textarea required class=" form-control ckeditor"   name="mota" ></textarea >
 									</div>
 									
 									

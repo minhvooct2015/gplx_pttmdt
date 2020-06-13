@@ -33,7 +33,7 @@
                             </div> -->
                             <div class="form-group">
                                 <label>Giấy phép lái xe đăng ký học hạng </label>
-                                 <select name="hx" class="form-control" id='nth'>
+                                 <select required name="hx" class="form-control" id='nth'>
                                 <option value="" disabled selected>Chọn hạng xe</option>
                                    @foreach($list1 as $nt)
                                     <option value="{{$nt->hx_id}}">{{$nt->hx_ten}}</option>
@@ -42,7 +42,7 @@
                             </div>
                             <div class="form-group">
                                 <label>Địa điểm học- Lớp học </label>
-                                 <select name="lhlx" class="form-control" id='lth'>
+                                 <select required name="lhlx" class="form-control" id='lth'>
                                  <option value="" disabled selected>Chọn lớp học</option>
                                    @foreach($list2 as $nt)
                                             <option value="{{$nt->lhlx_id}}">{{$nt->lhlx_ten}}</option>
@@ -51,24 +51,24 @@
                             </div>
                             <div class="form-group">
                                 <label>Ảnh chụp chứng nhận sức khỏe mặt trước </label>
-                                <input  name="sk1"  class="form-control input--style-3 js-datepicker"  type="file" >
+                                <input  required name="sk1"  class="form-control input--style-3 js-datepicker"  type="file" >
                             </div>
                             <div class="form-group">
                                 <label>Ảnh chụp chứng nhận sức khỏe mặt sau </label>
-                              <input  name="sk2"  class="form-control input--style-3 js-datepicker"  type="file" >
+                              <input required name="sk2"  class="form-control input--style-3 js-datepicker"  type="file" >
                             </div>
                             <div class="form-group">
                                 <label>Ảnh chụp 3x4 </label>
-                                <input  name="a34"  class="form-control input--style-3 js-datepicker"  type="file" >
+                                <input required name="a34"  class="form-control input--style-3 js-datepicker"  type="file" >
                             </div>
                            
                            <div class="form-group">
                                 <label>Ảnh chụp chứng minh nhân dân mặt trước </label>
-                                <input  name="cm1"  class="form-control input--style-3 js-datepicker"  type="file" >
+                                <input required name="cm1"  class="form-control input--style-3 js-datepicker"  type="file" >
                             </div>
                             <div class="form-group">
                                 <label>Ảnh chụp chứng minh nhân dân mặt sau </label>
-                                <input  name="cm2"  class="form-control input--style-3 js-datepicker"  type="file" >
+                                <input required name="cm2"  class="form-control input--style-3 js-datepicker"  type="file" >
                             </div>
                             <input type="submit" name="submit" value="Thêm" class="btn btn-primary">
                                     <input type="reset" value="Làm mới" class="btn btn-danger">

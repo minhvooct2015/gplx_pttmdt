@@ -28,7 +28,7 @@
 							 	 {{csrf_field()}}
 							<div class="form-group">
 								<label>Ngày thi:</label>
-    							<input required name="ngt" class="form-control datepicker" placeholder="Ngày thi..." type="text" >
+    							<input  required name="ngt" class="form-control datepicker" placeholder="Ngày thi..." type="text" >
 							</div>
 							<div class="form-group">
 								<label>Giờ thi:</label>
@@ -36,7 +36,7 @@
 							</div>
 							<div class="form-group">
 								<label>Loại thi:</label>
-    							<select  name="llt" class="form-control">
+    							<select required  name="llt" class="form-control">
     										<option value="" disabled selected>Chọn loại thi</option>
 											@foreach($list1 as $cate)
 											<option value="{{$cate->llh_id}}">{{$cate->llh_ten}}</option>
@@ -45,7 +45,7 @@
 							</div>
 							<div class="form-group" >
 										<label>Chỗ thi</label>
-										<select  name="dc" class="form-control">
+										<select required name="dc" class="form-control">
 											<option value="" disabled selected>Chọn  thi</option>
 											@foreach($list as $cate)
 											<option value="{{$cate->cth_id}}">{{$cate->cth_ten}}</option>

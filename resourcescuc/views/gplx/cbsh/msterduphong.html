@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/cbsh/')}}/">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>@yield('title') </title>
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/datepicker3.css" rel="stylesheet">
+<link href="css/styles.css" rel="stylesheet">
+<script src="js/lumino.glyphs.js"></script>
+<script src="ckeditor/ckeditor.js"></script>
+<link rel="stylesheet" href="../lib/themes/default.css">
+<link rel="stylesheet" href="../lib/themes/default.date.css">
+<link rel="stylesheet" href="../lib/themes/default.time.css">
+
+
+
+	<!-- <link href="../bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet"> -->
+
+    <!-- MetisMenu CSS -->
+   <!--  <link href="../bower_components/metisMenu/dist/metisMenu.min.css" rel="stylesheet">
+ -->
+    <!-- Custom CSS -->
+    <!-- <link href="../dist/css/sb-admin-2.css" rel="stylesheet">
+ -->
+    <!-- Custom Fonts -->
+   <!--  <link href="../bower_components/font-awesome/css/font-awesome.min.css" rel="stylesheet" type="text/css"> -->
+
+    <!-- DataTables CSS -->
+   <!--  <link href="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.css" rel="stylesheet"> -->
+
+    <!-- DataTables Responsive CSS -->
+   <!--  <link href="../bower_components/datatables-responsive/css/dataTables.responsive.css" rel="stylesheet"> -->
+</head>
+<body>
+	<nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">Dal company</a>
+				<ul class="user-menu">
+					<li class="dropdown pull-right">
+						<a href="#" class="dropdown-toggle" data-toggle="dropdown"><svg class="glyph stroked male-user"><use xlink:href="#stroked-male-user"></use></svg> {{Auth::user()->email}} <span class="caret"></span></a>
+						
+                           <li><a href="{{asset('logout')}}"><svg class="glyph stroked cancel"><use xlink:href="#stroked-cancel"></use></svg> Logout</a></li>
+                        
+					</li>
+				</ul>
+			</div>
+							
+		</div><!-- /.container-fluid -->
+	</nav>
+		
+	<div id="sidebar-collapse" class="col-sm-3 col-lg-2 sidebar">
+		<ul class="nav menu">
+			<li role="presentation" class="divider"></li>
+			<li class="active"><a href="{{asset('/gplx/cbsh/home')}}"><svg class="glyph stroked dashboard-dial"><use xlink:href="#stroked-dashboard-dial"></use></svg> Trang chủ</a></li>
+			<li><a href="#"><svg class="glyph stroked calendar"><use xlink:href="#stroked-calendar"></use></svg> Sản phẩm</a></li>
+			<li ><a href="{{asset('gplx/cbsh/dshangxe')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục hạng xe</a></li>
+
+            <li ><a href="{{asset('gplx/cbsh/dsmota')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục mo ta hạng xe</a></li>
+
+			<li ><a href="{{asset('gplx/cbsh/dschohoc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục chỗ học</a></li>
+            <li ><a href="{{asset('gplx/cbsh/dschothi')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục chỗ thi</a></li>
+            <li ><a href="{{asset('gplx/cbsh/dsloailh')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục loại lịch học</a></li>
+            
+            <li ><a href="{{asset('gplx/cbsh/themgiaovien')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục giáo viên</a></li>
+            <li ><a href="{{asset('gplx/cbsh/dsgiaovien')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục danh sách giáo viên</a></li>
+            
+            <li ><a href="{{asset('gplx/cbsh/dslichthi')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh mục lịch thi</a></li>
+            <li ><a href="{{asset('gplx/cbsh/saplt')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Phân công giáo viên gác thi </a></li>
+            <li ><a href="{{asset('gplx/cbsh/dspc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Lịch phân công giáo viên gác thi </a></li>
+
+            <li ><a href="{{asset('gplx/cbsh/lichthilh')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Sắp lịch thi  </a></li>
+            <li ><a href="{{asset('gplx/cbsh/dslichthith')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Lịch thi tổng hợp  </a></li>
+
+             <li ><a href="{{asset('gplx/cbsh/dslophoc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Lớp học </a></li>
+
+            <li ><a href="{{asset('gplx/cbsh/themlichhoc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Sắp lịch học </a></li>
+            <li ><a href="{{asset('gplx/cbsh/dslichhoc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh sách lịch học </a></li>
+
+             <li ><a href="{{asset('gplx/cbsh/dslichhocth')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh sách lịch học tổng hợp </a></li>
+
+             <li ><a href="{{asset('gplx/cbsh/dspdk')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Chấm thi </a></li>
+
+
+
+
+
+			<li role="presentation" class="divider"></li>
+		</ul>
+
+		<!-- menu 2 cấp -->
+		
+	</div><!--/.sidebar-->
+
+<!-- main -->
+	@yield('main')
+
+
+	<script src="js/jquery-1.11.1.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/chart.min.js"></script>
+	<script src="js/chart-data.js"></script>
+	<script src="js/easypiechart.js"></script>
+	<script src="js/easypiechart-data.js"></script>
+	<script src="js/bootstrap-datepicker.js"></script>
+	<script>
+		$('#calendar').datepicker({
+		});
+		!function ($) {
+		    $(document).on("click","ul.nav li.parent > a > span.icon", function(){          
+		        $(this).find('em:first').toggleClass("glyphicon-minus");      
+		    }); 
+		    $(".sidebar span.icon").find('em:first').addClass("glyphicon-plus");
+		}(window.jQuery);
+
+		$(window).on('resize', function () {
+		  if ($(window).width() > 768) $('#sidebar-collapse').collapse('show')
+		})
+		$(window).on('resize', function () {
+		  if ($(window).width() <= 767) $('#sidebar-collapse').collapse('hide')
+		})
+	</script>	
+	<script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
+    <script src="../lib/picker.js"></script>
+    <script src="../lib/picker.date.js"></script>
+    <script src="../lib/picker.time.js"></script>
+    <script src="../lib/legacy.js"></script>
+    <script src="../lib/compressed/translations/vi.js"></script>
+    <script type="text/javascript">
+        var today = new Date();
+        var dd = today.getDate();
+        var mm = today.getMonth()+1; //January is 0!
+        var yyyy = today.getFullYear();
+        if(dd<10) {
+            dd='0'+dd;
+        }
+        if(mm<10) {
+            mm='0'+mm;
+        }
+        today = dd+'/'+mm+'/'+yyyy;
+
+        var $input = $( '.datepicker' ).pickadate({
+            formatSubmit: 'yyyy/mm/dd',
+            // editable: true,
+            closeOnSelect: false,
+            closeOnClear: false,
+        })
+
+        var picker = $input.pickadate('picker')
+        // picker.set('select', '14 October, 2014')
+        // picker.open()
+
+        // $('button').on('click', function() {
+        //     picker.set('disable', true);
+        // });
+
+        var $input2 = $( '.timepicker' ).pickatime({
+        })
+        var picker2 = $input2.pickatime('picker2')
+        picker2.open()
+
+    </script>
+<script>
+try {
+  fetch(new Request("https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js", { method: 'HEAD', mode: 'no-cors' })).then(function(response) {
+    return true;
+  }).catch(function(e) {
+    var carbonScript = document.createElement("script");
+    carbonScript.src = "//cdn.carbonads.com/carbon.js?serve=CK7DKKQU&placement=wwwjqueryscriptnet";
+    carbonScript.id = "_carbonads_js";
+    document.getElementById("carbon-block").appendChild(carbonScript);
+  });
+} catch (error) {
+  console.log(error);
+}
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+ <script src="../bower_components/jquery/dist/jquery.min.js"></script>
+
+    <!-- Bootstrap Core JavaScript -->
+   
+
+    <!-- DataTables JavaScript -->
+    <script src="../bower_components/DataTables/media/js/jquery.dataTables.min.js"></script>
+    <script src="../bower_components/datatables-plugins/integration/bootstrap/3/dataTables.bootstrap.min.js"></script>
+
+    <!-- Page-Level Demo Scripts - Tables - Use for reference -->
+    <script>
+    $(document).ready(function() {
+        $('#dataTables-example').DataTable({
+                responsive: true
+        });
+    });
+    </script>
+@yield('script')
+</body>
+
+</html>

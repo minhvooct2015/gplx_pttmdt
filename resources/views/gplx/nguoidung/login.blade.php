@@ -2,7 +2,7 @@
 <html lang="en">
 
 <head>
-        <base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/nguoidung/')}}/">
+        <base href="{{asset('../resources/views/gplx/nguoidung/')}}/">
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -49,10 +49,10 @@ body {
                                  {{csrf_field()}}
                         <fieldset>
                             <div class="form-group">
-                                <input class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
+                                <input required class="form-control" placeholder="E-mail" name="email" type="email" autofocus="">
                             </div>
                             <div class="form-group">
-                                <input class="form-control" placeholder="Password" name="password" type="password" value="">
+                                <input required class="form-control" placeholder="Password" name="password" type="password" value="">
                             </div>
                             <div class="checkbox">
                                 <label>

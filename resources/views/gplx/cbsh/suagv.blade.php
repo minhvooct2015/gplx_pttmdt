@@ -25,7 +25,7 @@
 									<div class="form-group" >
 										<label>Ảnh giáo viên</label>
 										<input  id="img" type="file" name="img" class="form-control " onchange="changeImg(this)" >
-										<img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhGV/'.$gv->gv_anh)}}" class="thumbnail">
+										<img width="100px" src="{{asset('../storage/app/anhGV/'.$gv->gv_anh)}}" class="thumbnail">
 					                   <!--  <img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png"> -->
 									</div>
 									<div class="form-group" >

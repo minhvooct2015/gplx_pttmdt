@@ -27,7 +27,7 @@
 									
 									<div class="form-group" >
 										<label>Chỗ học</label>
-										<select name="ch" id="lth" class="form-control">
+										<select required name="ch" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn chỗ học</option>
 											@foreach($list1 as $nt)
 											<option value="{{$nt->ch_id}}">{{$nt->ch_ten}}</option>
@@ -37,7 +37,7 @@
 									</div>
 									<div class="form-group" >
 										<label>Lớp học lái xe </label>
-										<select name="lhlx" id="lth" class="form-control">
+										<select required name="lhlx" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn lớp học</option>
 											@foreach($list as $nt)
 											<option value="{{$nt->lhlx_id}}">{{$nt->lhlx_ten}}</option>
@@ -48,7 +48,7 @@
 									<div class="form-group" >
 										<label>Loại lịch học</label><br>
 										@foreach($list2 as $nt)
-										{{$nt->llh_ten}} <input type="radio" name="llh" value="{{$nt->llh_id}}"> 
+										{{$nt->llh_ten}} <input required type="radio" name="llh" value="{{$nt->llh_id}}"> 
 										@endforeach
 									</div>
 									<div class="form-group">

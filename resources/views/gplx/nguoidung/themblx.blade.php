@@ -22,7 +22,7 @@
                             @include('errors.note')
                             <div class="form-group">
                                 <label>Bằng lái xe có hạng </label>
-                                <select name="hx" class="form-control">
+                                <select required name="hx" class="form-control">
                                    <option value="" disabled selected>Chọn hạng xe</option>
                                    @foreach($list1 as $nt)
                                     <option value="{{$nt->hx_id}}">{{$nt->hx_ten}}</option>
@@ -31,15 +31,15 @@
                             </div>
                             <div class="form-group">
                                 <label>Bằng lái xe số </label>
-                                <input required name="so"  class="form-control input--style-3 js-datepicker" placeholder="Số giấy phép lái xe..." type="text" >
+                                <input required required name="so"  class="form-control input--style-3 js-datepicker" placeholder="Số giấy phép lái xe..." type="text" >
                             </div>
                             <div class="form-group">
                                 <label>Ngày cấp </label>
-                                <input required name="ngc" id="theDate" class="form-control input--style-3 js-datepicker" placeholder="Ngày cấp..." type="date" >
+                                <input required required name="ngc" id="theDate" class="form-control input--style-3 js-datepicker" placeholder="Ngày cấp..." type="date" >
                             </div>
                             <div class="form-group">
                                 <label>Nơi cấp </label>
-                                <input class="form-control" name="nc" placeholder="Nơi cấp" />
+                                <input required class="form-control" name="nc" placeholder="Nơi cấp" />
                             </div>
                            
                             <input type="submit" name="submit" value="Thêm" class="btn btn-primary">

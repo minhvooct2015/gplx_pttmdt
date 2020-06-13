@@ -34,7 +34,7 @@ class MotaHANGXEcontroller extends Controller
 //           ->where('hx_id', '>', 1)->get();
 
 
-
+//dd($list1);
 
 
         return view('gplx.cbsh.motahx',$data);
@@ -54,6 +54,7 @@ class MotaHANGXEcontroller extends Controller
     {
     	$data['gvlist'] = DB::table('motahangxe')
     	->join('cbsh_hangxe', 'motahangxe.id_hx', '=', 'cbsh_hangxe.hx_id')->get();
+        //dd($data['gvlist']);
     	return view('gplx.cbsh.dsmotahx',$data);
     }
     public function suamthx($id)

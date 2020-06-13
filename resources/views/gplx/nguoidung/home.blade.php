@@ -20,7 +20,7 @@
 		                		<div class="col-md-5">
 			                        
 			                            <!-- <img class="img-responsive" src="image/320x150.png" alt=""> -->
-			                            <img  	height="150px" width="150px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhHX/'.$cate->mthx_anh)}}" class="thumbnail">
+			                            <img  	height="150px" width="150px" src="{{asset('../storage/app/anhHX/'.$cate->mthx_anh)}}" class="thumbnail">
 			                        
 			                    </div>
 

@@ -24,18 +24,18 @@
                                 </div>
                                 <?php Session::forget('success');?>
                                 @endif
-						<div class="form-group col-xs-8 row" >
+					<!-- 	<div class="form-group col-xs-8 row" >
 										<label>Năm thi</label>
 										<input type="number" class="form-control" name="nt" placeholder="Chọn năm ..." min="2000" max="2100" id='nth'>
 
-									</div>
+									</div> -->
 						<form role="form" method="post" enctype="multipart/form-data">
 							<div class="row" style="margin-bottom:40px">
 								<div class="col-xs-8">
 									
 									<div class="form-group" >
 										<label>Lịch thi</label>
-										<select name="lt" id="lth" class="form-control">
+										<select required name="lt" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn lịch thi</option>
 											@foreach($ngaythi as $nt)
 											<option value="{{$nt->lt_id}}">{{$nt->lt_ngaythi}}-{{$nt->llh_ten}}</option>
@@ -45,7 +45,7 @@
 									</div>
 									<div class="form-group" >
 										<label>Lớp học lái xe :</label>
-										<select name="lh" id="lth" class="form-control">
+										<select required name="lh" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn lớp học</option>
 											@foreach($list as $nt)
 											<option value="{{$nt->lhlx_id}}">{{$nt->lhlx_ten}}</option>

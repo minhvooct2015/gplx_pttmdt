@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/cbsh/')}}/">
+	<base href="{{asset('../resources/views/gplx/cbsh/')}}/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>@yield('title') </title>
@@ -110,7 +110,7 @@
 
                             <li ><a href="{{asset('gplx/cbsh/dslichthi')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Danh sách lịch thi</a></li>
                               <li ><a href="{{asset('gplx/cbsh/lichthilh')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Sắp lịch thi  </a></li>
-                            <li ><a href="{{asset('gplx/cbsh/saplt')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Phân công giáo viên gác thi </a></li>
+                            <li ><a href="{{asset('gplx/cbsh/saplt')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Phân công giáo viên </a></li>
                             <li ><a href="{{asset('gplx/cbsh/dspc')}}"><svg class="glyph stroked notepad "><use xlink:href="#stroked-notepad"/></svg> Lịch phân công gác thi </a></li>
 
                           
