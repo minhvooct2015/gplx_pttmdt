@@ -35,7 +35,7 @@
 									
 									<div class="form-group" >
 										<label>Lịch thi</label>
-										<select required name="lt" id="lth" class="form-control">
+										<select name="lt" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn lịch thi</option>
 											@foreach($ngaythi as $nt)
 											<option value="{{$nt->lt_id}}">{{$nt->lt_ngaythi}}-{{$nt->llh_ten}}</option>
@@ -45,7 +45,7 @@
 									</div>
 									<div class="form-group" >
 										<label>Lớp học lái xe :</label>
-										<select required name="lh" id="lth" class="form-control">
+										<select name="lh" id="lth" class="form-control">
 											<option value="" disabled selected>Chọn lớp học</option>
 											@foreach($list as $nt)
 											<option value="{{$nt->lhlx_id}}">{{$nt->lhlx_ten}}</option>

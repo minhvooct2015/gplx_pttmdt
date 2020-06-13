@@ -25,12 +25,12 @@
                                         <!-- <label>Hạng xe</label> -->
                                         <br>
                                         
-                              <!--  <select name="lt" id='nth' class="form-control">
+                               <select name="lt" id='nth' class="form-control">
                                             <option value="" disabled selected>Hiển thị phiếu đăng ký theo hạng xe ...</option>
                                              @foreach($list2 as $nt)
                                             <option value="{{$nt->hx_id}}">{{$nt->hx_ten}}</option>
                                             @endforeach
-                                        </select> -->
+                                        </select>
                                   <!-- 
                                         <input type="text" class="form-control" name="nt" placeholder="Hiển thị phiếu đăng ký theo hạng xe ..." min="2000" max="2100" id='nth'> -->
 

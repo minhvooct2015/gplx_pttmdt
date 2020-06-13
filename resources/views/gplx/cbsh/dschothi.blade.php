@@ -20,7 +20,7 @@
 							 <form role="form" method="post" enctype="multipart/form-data">
 							 	 {{csrf_field()}}
 							<div class="form-group">
-								<label>Tên chỗ thi:</label>
+								<label>Tên chỗ học:</label>
     							<input required type="text" name="name" class="form-control" placeholder="Tên chỗ thi...">
 							</div>
 							<div class="form-group">

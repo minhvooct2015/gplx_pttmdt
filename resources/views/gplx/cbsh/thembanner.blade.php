@@ -21,29 +21,29 @@
 								<div class="col-xs-8">
 									<div class="form-group" >
 										<label>Banner ngang 1:</label>
-										<input required id="img" type="file" name="b1" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b1" class="form-control " onchange="changeImg(this)">
 									</div>
 									<div class="form-group" >
 										<label>Banner ngang 2:</label>
-										<input required id="img" type="file" name="b2" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b2" class="form-control " onchange="changeImg(this)">
 					                   <!--  <img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png"> -->
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 1:</label>
-										<input  required id="img" type="file" name="b3" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b3" class="form-control " onchange="changeImg(this)">
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 2:</label>
-										<input required id="img" type="file" name="b4" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b4" class="form-control " onchange="changeImg(this)">
 									</div>
 									
 									<div class="form-group" >
 										<label>Banner trái 3:</label>
-										<input  required id="img" type="file" name="b5" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b5" class="form-control " onchange="changeImg(this)">
 									</div>
 									<div class="form-group" >
 										<label>Banner trái 4:</label>
-										<input required id="img" type="file" name="b6" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="b6" class="form-control " onchange="changeImg(this)">
 									</div>
 									
 									<input type="submit" name="submit" value="Thêm" class="btn btn-primary">

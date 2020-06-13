@@ -20,29 +20,29 @@
 								<div class="col-xs-8">
 									<div class="form-group" >
 										<label>Tên giáo viên</label>
-										<input required type="text" name="name" class="form-control">
+										<input  type="text" name="name" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Ảnh giáo viên</label>
-										<input required id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
+										<input  id="img" type="file" name="img" class="form-control " onchange="changeImg(this)">
 					                   <!--  <img id="avatar" class="thumbnail" width="300px" src="img/new_seo-10-512.png"> -->
 									</div>
 									<div class="form-group" >
 										<label>Địa chỉ</label>
-										<input required type="text" name="dc" class="form-control">
+										<input  type="text" name="dc" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Trình độ</label>
-										<input required type="text" name="trd" class="form-control">
+										<input  type="text" name="trd" class="form-control">
 									</div>
 									
 									<div class="form-group" >
 										<label>Số điện thoại</label>
-										<input required type="text" name="sdt" class="form-control">
+										<input  type="text" name="sdt" class="form-control">
 									</div>
 									<div class="form-group" >
 										<label>Email</label>
-										<input required type="email" name="email" class="form-control">
+										<input  type="email" name="email" class="form-control">
 									</div>
 									
 									<input type="submit" name="submit" value="Thêm" class="btn btn-primary">

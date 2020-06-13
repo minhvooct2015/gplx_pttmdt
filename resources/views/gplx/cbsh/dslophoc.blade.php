@@ -32,7 +32,7 @@
 							</div>
 							<div class="form-group">
 								<label>Hạng xe</label>
-    							<select required name="hx" id="lth" class="form-control">
+    							<select name="hx" id="lth" class="form-control">
     										<option value="" disabled selected>Chọn hạng xe</option>
 											@foreach($list1 as $nt)
 											<option value="{{$nt->hx_id}}">{{$nt->hx_ten}}</option>
@@ -41,7 +41,7 @@
 							</div>
 							<div class="form-group">
 								<label>Giáo viên</label>
-    							<select required name="gv" id="lth" class="form-control">
+    							<select name="gv" id="lth" class="form-control">
     										<option value="" disabled selected>Chọn giáo viên</option>
 											@foreach($list as $nt)
 											<option value="{{$nt->gv_id}}">{{$nt->gv_ten}}</option>

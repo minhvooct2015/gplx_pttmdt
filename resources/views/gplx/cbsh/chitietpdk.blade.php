@@ -66,20 +66,20 @@
                                       @foreach($list3 as $hx)
                                     <tr >
                                       <th  style="width:15%">Ảnh giấy khám sức khỏe mặt trước</th>
-                                       <td><img width="100px" height="100px" src="{{asset('../storage/app/anhPDK/'.$hx->pdk_anhsk1)}}" class="thumbnail"></td>
+                                       <td><img width="100px" height="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhPDK/'.$hx->pdk_anhsk1)}}" class="thumbnail"></td>
                                     </tr>
                                      <tr >
                                       <th  style="width:15%">Ảnh giấy khám sức khỏe mặt sau</th>
-                                       <td><img width="100px" height="100px" src="{{asset('../storage/app/anhPDK/'.$hx->pdk_anhsk2)}}" class="thumbnail"></td>
+                                       <td><img width="100px" height="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhPDK/'.$hx->pdk_anhsk2)}}" class="thumbnail"></td>
                                     </tr><tr >
                                       <th  style="width:15%">Ảnh 3x4</th>
-                                       <td><img width="100px" height="100px" src="{{asset('../storage/app/anhPDK/'.$hx->pdk_anh34)}}" class="thumbnail"></td>
+                                       <td><img width="100px" height="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhPDK/'.$hx->pdk_anh34)}}" class="thumbnail"></td>
                                     </tr><tr >
                                       <th  style="width:15%">Ảnh giấy chứng minh nhân dân mặt trước</th>
-                                       <td><img width="100px" height="100px" src="{{asset('../storage/app/anhPDK/'.$hx->pdk_anhcmnd1)}}" class="thumbnail"></td>
+                                       <td><img width="100px" height="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhPDK/'.$hx->pdk_anhcmnd1)}}" class="thumbnail"></td>
                                     </tr><tr >
                                       <th  style="width:15%">Ảnh giấy chứng minh nhân dân mặt sau</th>
-                                       <td><img width="100px" height="100px" src="{{asset('../storage/app/anhPDK/'.$hx->pdk_anhcmnd2)}}" class="thumbnail"></td>
+                                       <td><img width="100px" height="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhPDK/'.$hx->pdk_anhcmnd2)}}" class="thumbnail"></td>
                                     </tr>
                                     
                                 </thead>

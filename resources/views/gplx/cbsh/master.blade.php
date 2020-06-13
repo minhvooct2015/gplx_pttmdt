@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<base href="{{asset('../resources/views/gplx/cbsh/')}}/">
+	<base href="{{asset('http://localhost/laravel/laravel/resources/views/gplx/cbsh/')}}/">
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>@yield('title') </title>

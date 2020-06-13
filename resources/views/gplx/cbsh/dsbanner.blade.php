@@ -41,22 +41,22 @@
                                    @foreach($list as $hx)
                                 <tr>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang1)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang1)}}" class="thumbnail">
                                 </td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_ngang2)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_ngang2)}}" class="thumbnail">
                                 </td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai1)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai1)}}" class="thumbnail">
                                 </td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai2)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai2)}}" class="thumbnail">
                                 </td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai3)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai3)}}" class="thumbnail">
                                 </td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhBanner/'.$hx->ban_trai4)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhBanner/'.$hx->ban_trai4)}}" class="thumbnail">
                                 </td>
                                     <td>
                                         @if($hx->ban_trangthai==0)

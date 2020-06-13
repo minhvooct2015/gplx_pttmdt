@@ -41,7 +41,7 @@
                                 <tr>
                                 <td>{{$hx->gv_ten}}</td>
                                 <td>
-                                <img width="100px" src="{{asset('../storage/app/anhGV/'.$hx->gv_anh)}}" class="thumbnail">
+                                <img width="100px" src="{{asset('http://localhost/laravel/laravel/storage/app/anhGV/'.$hx->gv_anh)}}" class="thumbnail">
                                 </td>
                                 <td>{{$hx->gv_sdt}}</td>
                                 <td>{{$hx->gv_diachi}}</td>
